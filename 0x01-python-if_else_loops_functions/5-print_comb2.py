@@ -6,4 +6,4 @@ for x in range(0, 100):
         print('{}'.format(x), end='')
     else:
         print('{}'.format(x), end=', ')
-print('\n')
+print('{}'.format('\n'))
