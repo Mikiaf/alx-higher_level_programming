@@ -3,7 +3,7 @@
 def uppercase(str):
     for x in str:
         if 122 >= ord(x) >= 97:
-            x = ord(x) - 32
-            print("{:c}".format(x), end=' ')
-        else:
-            print("{}".format(x), end='')
+            x = chr(ord(x) - 32)
+        print("{}".format(x),end='')
+    print()
+uppercase('Miki is the best')
