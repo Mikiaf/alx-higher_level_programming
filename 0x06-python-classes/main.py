@@ -1,19 +1,16 @@
 #!/usr/bin/python3
-class Base():
-    """ My base class """
+Square = __import__('1-square').Square
 
-    __nb_instances = 0
+my_square = Square(3)
+print(type(my_square))
+print(my_square.__dict__)
 
-    def __init__(self):
-        Base.__nb_instances += 1
-        self.id = Base.__nb_instances
+try:
+    print(my_square.size)
+except Exception as e:
+    print(e)
 
-class User(Base):
-    """ My User class """
-
-    def __init__(self):
-        super().__init__()
-        self.id += 99
-
-u = User()
-print(u.id)
+try:
+    print(my_square.__size)
+except Exception as e:
+    print(e)
