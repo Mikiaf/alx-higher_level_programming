@@ -2,8 +2,8 @@
 """
     contains class Rectangle which implements Base.
 """
-from models.base import Base
 
+from models.base import Base
 
 class Rectangle(Base):
     """
@@ -27,6 +27,7 @@ class Rectangle(Base):
             getter function for __width
             Return: width
         """
+
         return self.__width
 
     @width.setter
@@ -34,8 +35,9 @@ class Rectangle(Base):
         """
             setter function for width.
             Args:
-                value (int): value to be set.
+               value (int): value to be set.
         """
+        
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -108,8 +110,13 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
     def area(self):
+        """return area of rectangle"""
         return self.width * self.height
     def display(self):
+        """
+        displays area of
+            with '#'
+        """
         for x in range(self.height):
             for y in range(self.width):
                 print("#",end='')
