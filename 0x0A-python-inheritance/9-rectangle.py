@@ -5,3 +5,5 @@ class Rectangle:
         self.integer_validator("width",width)
         self.__height = height
         self.integer_validator("height",height)
+    def area(self):
+        

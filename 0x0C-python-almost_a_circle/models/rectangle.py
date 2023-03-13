@@ -37,7 +37,7 @@ class Rectangle(Base):
             Args:
                value (int): value to be set.
         """
-        
+
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -104,6 +104,7 @@ class Rectangle(Base):
             Args:
                 value (int): value to be set.
         """
+
         if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -111,15 +112,29 @@ class Rectangle(Base):
         self.__y = value
     def area(self):
         """return area of rectangle"""
+
         return self.width * self.height
     def display(self):
         """
         displays area of
             with '#'
         """
-        for x in range(self.height):
-            for y in range(self.width):
-                print("#",end='')
-            print()
+
+        for i in range(self.height):
+            rectangle += (" " * self.x) + (print_symbol*self.width) + "\n"
+        print(rectangle, end="")
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,self.x,self.y,self.width,self.height)
+    def update(self, *args, **kwargs):
+        if len(args) == 0:
+            for key,value in kwargs.items():
+                self.key = value
+        else:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except IndexError:
+                pass
