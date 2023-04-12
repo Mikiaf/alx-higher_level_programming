@@ -1,17 +1,10 @@
-#!/usr/bin/python3
-Square = __import__('5-square').Square
 
-my_square = Square(3)
-my_square.my_print()
 
-print("--")
+class square:
 
-my_square.size = 10
-my_square.my_print()
-
-print("--")
-
-my_square.size = 0
-my_square.my_print()
-
-print("--")
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def tell(self):
+        print("hello {} your are {} year old".format(self.name,self.name))
