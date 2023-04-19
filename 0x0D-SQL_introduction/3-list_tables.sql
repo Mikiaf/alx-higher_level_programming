@@ -1,3 +1,3 @@
---showing tabales in database
----queries database
+-- showing tabales in database
+-- queries database
 show tabales;

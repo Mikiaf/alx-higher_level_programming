@@ -1,5 +1,5 @@
---creating table
----queries database
+-- creating table
+-- queries database
 create table if not exists first_table (
     id int
     name varchar(256)
