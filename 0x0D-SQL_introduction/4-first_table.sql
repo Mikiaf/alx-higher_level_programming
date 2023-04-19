@@ -1,6 +1,7 @@
 -- creating table
 -- queries database
-create table if not exists first_table (
-    id int
-    name varchar(256)
-);
+
+CREATE TABLE IF NOT EXISTS first_table{
+    ID INT,
+    NAME varchar(256)
+};
