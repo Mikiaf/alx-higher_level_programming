@@ -1,13 +1,13 @@
 -- creating table
 -- queries database
-CREATE TABLE if not exists second_tabl (
-    id int not null auto_increment,
-    name varchar(256),
-    score int
+CREATE TABLE IF NOT EXISTS second_table(
+    id INT,
+    name VARCHAR(256),
+    score INT
 );
---adding data into it
-insert into second_table(name,score)
-value ("John",10),
-    ("Alex",3),
-    ("Bob",14),
-    ("George",8)
+
+INSERT INTO second_table(id,name score)
+VALUE (1, "John",10)
+     (2, "Alex",3)
+     (3, "Bob",14)
+     (4, "George",8);
