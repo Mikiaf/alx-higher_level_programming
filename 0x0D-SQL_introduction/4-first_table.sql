@@ -2,6 +2,6 @@
 -- queries database
 
 CREATE TABLE IF NOT EXISTS first_table{
-    ID INT,
-    NAME varchar(256)
+    id INT,
+    name varchar(256)
 };
