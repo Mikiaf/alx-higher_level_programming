@@ -1,4 +1,5 @@
---creating table 
+--creating table
+---queries database
 CREATE TABLE if not exists second_tabl (
     id int not null auto_increment,
     name varchar(256),
