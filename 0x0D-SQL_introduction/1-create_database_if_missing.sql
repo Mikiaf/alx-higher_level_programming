@@ -1,3 +1,3 @@
---- createing database
---- queries database
+--createing database
+--queries database
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
