@@ -7,8 +7,5 @@ import sys
 variable found in the header of the response.
 """
 if __name__ == "__main__":
-    try:
-        with urllib.request.urlopen(sys.argv[1]) as header_requist:
-            print(header_requist.headers['X-Request-Id'])
-    except IndexError:
-        pass
+    with urllib.request.urlopen(sys.argv[1]) as header_requist:
+        print(header_requist.headers['X-Request-Id'])
