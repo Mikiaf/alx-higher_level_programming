@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""define class called Base"""
+"""
+creating class called base
+"""
+
 
 class Base:
-    """define privite class attribute called __nb__objects"""
+    "private class attribute"
     __nb_objects = 0
 
     def __init__(self, id=None):
